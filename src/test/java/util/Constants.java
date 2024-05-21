@@ -49,6 +49,7 @@ public class Constants {
     public static final String MESSAGE_ESTE_EMAIL_JA_ESTA_SENDO_USADO = "Este email já está sendo usado";
     public static final String MESSAGE_LOGIN_REALIZADO_COM_SUCESSO = "Login realizado com sucesso";
     public static final String MESSAGE_REGISTRO_EXCLUIDO_COM_SUCESSO_ESTOQUE_DOS_PRODUTOS_REABASTECIDO = "Registro excluído com sucesso. Estoque dos produtos reabastecido";
+    public static final String MESSAGE_NAO_FOI_ENCONTRADO_CARRINHO_PARA_ESSE_USUARIO = "Não foi encontrado carrinho para esse usuário";
 
     //CONFIG
 
