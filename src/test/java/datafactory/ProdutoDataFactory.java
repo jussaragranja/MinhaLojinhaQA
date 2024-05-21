@@ -9,6 +9,7 @@ import io.restassured.http.ContentType;
 import org.apache.commons.lang3.RandomUtils;
 import org.apache.http.HttpStatus;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static util.Constants.PATH_PRODUTOS;
@@ -64,7 +65,18 @@ public class ProdutoDataFactory {
 
     }
 
-   public static List<ProdutoIdResponse> getListProdutos(){
+    public static List<ProdutoResponse> getListProdutos(int quantidade){
+
+        List<ProdutoResponse> produtoResponseList = new ArrayList<>();
+
+        for (int i = 0; i < quantidade; i++){
+            produtoResponseList.add(getFindProdutoByIndex(i));
+        }
+
+        return produtoResponseList;
+    }
+
+   public static List<ProdutoIdResponse> getListIdProdutos(){
       return RestAssured
                     .given()
                     .contentType(ContentType.JSON)
