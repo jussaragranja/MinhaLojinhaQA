@@ -25,5 +25,5 @@ mvn test
 
 ## Screenshots
 
-![App Screenshot](https://i.postimg.cc/mkGNvHxy/Screenshot-from-2024-05-20-17-37-47.png)
+![App Screenshot](https://i.postimg.cc/tTJLbdmL/Screenshot-from-2024-05-21-12-47-16.png)
 
