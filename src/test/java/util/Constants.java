@@ -7,6 +7,7 @@ public class Constants {
     public static final String PATH_LOGIN = "login";
     public static final String PATH_PRODUTOS = "produtos";
     public static final String PATH_CARRINHOS = "carrinhos";
+    public static final String PATH_CARRINHOS_CANCELAR_COMPRA = "carrinhos/cancelar-compra";
 
     //PARAMETERS
 
@@ -47,6 +48,7 @@ public class Constants {
     public static final String MESSAGE_EMAIL_E_OU_SENHA_INVALIDOS = "Email e/ou senha inválidos";
     public static final String MESSAGE_ESTE_EMAIL_JA_ESTA_SENDO_USADO = "Este email já está sendo usado";
     public static final String MESSAGE_LOGIN_REALIZADO_COM_SUCESSO = "Login realizado com sucesso";
+    public static final String MESSAGE_REGISTRO_EXCLUIDO_COM_SUCESSO_ESTOQUE_DOS_PRODUTOS_REABASTECIDO = "Registro excluído com sucesso. Estoque dos produtos reabastecido";
 
     //CONFIG
 
