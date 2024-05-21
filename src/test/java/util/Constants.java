@@ -5,6 +5,8 @@ public class Constants {
     //PATHS
     public static final String PATH_USERS = "usuarios";
     public static final String PATH_LOGIN = "login";
+    public static final String PATH_PRODUTOS = "produtos";
+    public static final String PATH_CARRINHOS = "carrinhos";
 
     //PARAMETERS
 
@@ -19,6 +21,11 @@ public class Constants {
     public static final String PARAM_USUARIOS_EMAIL = "usuarios[0].email";
     public static final String PARAM_USUARIOS_PASSWORD = "usuarios[0].password";
     public static final String PARAM_USUARIOS_ADMINISTRADOR = "usuarios[0].administrador";
+
+    public static final String PARAM_PRODUTOS_NOME = "produtos[0].nome";
+    public static final String PARAM_PRODUTOS_PRECO = "produtos[0].preco";
+    public static final String PARAM_PRODUTOS_DESCRICAO = "produtos[0].descricao";
+    public static final String PARAM_PRODUTOS_QUANTIDADE = "produtos[0].quantidade";
 
 
     //messages
@@ -39,5 +46,11 @@ public class Constants {
     public static final String MESSAGE_NOME_DEVE_SER_UMA_STRING = "nome deve ser uma string";
     public static final String MESSAGE_EMAIL_E_OU_SENHA_INVALIDOS = "Email e/ou senha inválidos";
     public static final String MESSAGE_ESTE_EMAIL_JA_ESTA_SENDO_USADO = "Este email já está sendo usado";
+    public static final String MESSAGE_LOGIN_REALIZADO_COM_SUCESSO = "Login realizado com sucesso";
+
+    //CONFIG
+
+    public static final String BEARER_TOKEN = "Bearer ";
+    public static final String AUTHORIZATION_TOKEN = "Authorization";
 
 }

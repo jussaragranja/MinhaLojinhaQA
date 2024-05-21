@@ -1,12 +1,10 @@
 package test.login;
 
-import entidade.Login;
-import entidade.UsuarioResponse;
+import entidade.response.UsuarioResponse;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.http.HttpStatus;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import requestspecification.BaseTest;
 
@@ -32,7 +30,8 @@ public class LoginTest extends BaseTest {
                     .post(PATH_LOGIN)
             .then()
                     .statusCode(HttpStatus.SC_OK)
-                    .log();
+                    .log().all()
+                .body(PARAM_MESSAGE, equalTo(MESSAGE_LOGIN_REALIZADO_COM_SUCESSO));
     }
     @Test
     public void realizarLoginSemSucessoSenhaIncorreta(){

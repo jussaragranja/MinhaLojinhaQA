@@ -2,7 +2,6 @@ package test.usuarios;
 
 import com.github.javafaker.Faker;
 import entidade.Usuario;
-import entidade.UsuarioResponse;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import org.apache.commons.lang3.RandomStringUtils;

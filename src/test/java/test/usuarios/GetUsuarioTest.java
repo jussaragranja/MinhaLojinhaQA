@@ -1,7 +1,7 @@
 package test.usuarios;
 
 import com.github.javafaker.Faker;
-import entidade.UsuarioResponse;
+import entidade.response.UsuarioResponse;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -62,7 +62,8 @@ public class GetUsuarioTest extends BaseTest {
             .then()
                 .statusCode(HttpStatus.SC_OK)
                 .log().all()
-                .body(PARAM_USUARIOS_NOME, containsString(usuarioResponse.getNome()),
+                .body(PARAM_QUANTIDADE, equalTo(1),
+                        PARAM_USUARIOS_NOME, containsString(usuarioResponse.getNome()),
                         PARAM_USUARIOS_EMAIL, equalTo(usuarioResponse.getEmail()),
                         PARAM_USUARIOS_PASSWORD, equalTo(usuarioResponse.getPassword()),
                         PARAM_USUARIOS_ADMINISTRADOR, equalTo(usuarioResponse.getAdministrador()));

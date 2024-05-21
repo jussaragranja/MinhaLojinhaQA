@@ -2,10 +2,9 @@ package datafactory;
 
 import com.github.javafaker.Faker;
 import entidade.Usuario;
-import entidade.UsuarioResponse;
+import entidade.response.UsuarioResponse;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
-import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 
 import static util.Constants.PATH_USERS;
