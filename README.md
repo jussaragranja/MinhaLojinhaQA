@@ -21,7 +21,6 @@ mvn test
 * LinkedIn: [@jussaragranja](https://linkedin.com/in/jussaragranja)
 * Github: [@jussaragranja](https://github.com/jussaragranja)
 * GitLab: [@jussaragranja](https://gitlab.com/jussaragranja)
-* Twitter: [@JuuhGranja](https://twitter.com/JuuhGranja)
 
 ## Screenshots
 
